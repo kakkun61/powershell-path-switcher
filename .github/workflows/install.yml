@@ -1,0 +1,25 @@
+name: install
+
+on: [push, pull_request]
+
+jobs:
+  test-powershell:
+    name: Install it on Windows
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install config
+      shell: pwsh
+      run: |
+        $ErrorActionPreference = 'Stop'
+        Install-Module config -Force
+    - name: Install PSMenu
+      shell: pwsh
+      run: |
+        $ErrorActionPreference = 'Stop'
+        Install-Module PSMenu -Force
+    - name: Install it
+      shell: pwsh
+      run: |
+        $ErrorActionPreference = 'Stop'
+        Import-Module .\path-switcher.psd1
