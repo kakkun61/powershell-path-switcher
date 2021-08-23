@@ -5,7 +5,7 @@ Set-StrictMode -Version Latest
 # .SYNOPSIS
 # Switch pathes on and off.
 function Switch-Path {
-  $config = Get-Config path-switcher
+  $config = Get-Config powershell-path-switcher
 
   if ($null -eq $config) {
     Write-Warning "No configurations"
