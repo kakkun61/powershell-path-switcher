@@ -12,7 +12,7 @@
 RootModule = 'path-switcher.psm1'
 
 # このモジュールのバージョン番号です。
-ModuleVersion = '0.0'
+ModuleVersion = '0.1'
 
 # サポートされている PSEditions
 # CompatiblePSEditions = @()
@@ -98,7 +98,7 @@ PrivateData = @{
         Tags = 'path'
 
         # このモジュールのライセンスの URL。
-        LicenseUri = 'https://github.com/kakkun61/powershell-path-switcher/blob/1.0/COPYING'
+        LicenseUri = 'https://github.com/kakkun61/powershell-path-switcher/blob/0.1/COPYING'
 
         # このプロジェクトのメイン Web サイトの URL。
         ProjectUri = 'https://github.com/kakkun61/powershell-path-switcher'
@@ -107,7 +107,7 @@ PrivateData = @{
         # IconUri = ''
 
         # このモジュールの ReleaseNotes
-        ReleaseNotes = 'https://github.com/kakkun61/powershell-path-switcher/blob/1.0/ChangeLog.md'
+        ReleaseNotes = 'https://github.com/kakkun61/powershell-path-switcher/blob/0.1/ChangeLog.md'
 
         ExternalModuleDependencies = @()
 
